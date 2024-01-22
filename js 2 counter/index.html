@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+<style>
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.counter{
+text-align: center;
+
+}
+.counter h1{
+font-size: 70px;
+}
+
+.counter h2{
+font-size: 90px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="counter">
+<h1>Counter</h1>
+<h2 id="number">0</h2>
+<input type="button" value="Increment" class="btn btn-success btn-lg " onclick="Counter(1)">
+<input type="button" value="Decrement" class="btn btn-danger btn-lg " onclick="Counter(-1)">
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+
+ var  count= 0
+function Counter(num)  {
+count +=num  
+
+document.getElementById('number').innerHTML = count; 
+
+
+}
+
+
+</script>
+
+</body>
+</html>
